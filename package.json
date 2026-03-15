@@ -19,8 +19,17 @@
     "vue-router": "^5.0.3"
   },
   "devDependencies": {
+    "lint-staged": "^16.4.0",
     "oxfmt": "^0.40.0",
     "oxlint": "^1.55.0",
-    "oxlint-tsgolint": "^0.16.0"
+    "oxlint-tsgolint": "^0.16.0",
+    "simple-git-hooks": "^2.13.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
+    "*": "oxfmt --no-error-on-unmatched-pattern"
   }
 }
