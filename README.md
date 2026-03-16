@@ -1,6 +1,6 @@
-# Nuxt Monorepo Starter
+# Nuxt Starter
 
-A minimal, production-ready Nuxt monorepo template to help you get started fast.
+A minimal Nuxt template to help you get started fast.
 
 ## Use This Template
 
