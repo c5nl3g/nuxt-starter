@@ -1,6 +1,19 @@
-# Nuxt Minimal Starter
+# Nuxt Monorepo Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A minimal, production-ready Nuxt monorepo template to help you get started fast.
+
+## Use This Template
+
+Scaffold a new project instantly using [giget](https://github.com/unjs/giget):
+
+```bash
+# npm
+npx giget gh:c5nl3g/nuxt-starter my-new-project
+
+# pnpm
+pnpm dlx giget gh:c5nl3g/nuxt-starter my-new-project
+
+```
 
 ## Setup
 
@@ -73,3 +86,8 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Resources
+
+- [Nuxt Documentation](https://nuxt.com/docs/getting-started/introduction)
+- [giget](https://github.com/unjs/giget)
