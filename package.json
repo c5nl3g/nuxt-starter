@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "clean": "rimraf -g '**/node_modules' '**/.nuxt'",
+    "clean": "pnpm dlx rimraf -g '**/node_modules' '**/.nuxt'",
     "dev": "nuxt dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
@@ -24,7 +24,6 @@
     "oxfmt": "^0.40.0",
     "oxlint": "^1.55.0",
     "oxlint-tsgolint": "^0.16.0",
-    "rimraf": "^6.1.3",
     "simple-git-hooks": "^2.13.1"
   },
   "simple-git-hooks": {
