@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "clean": "pnpm dlx rimraf -g '**/node_modules' '**/.nuxt'",
+    "deps:check": "pnpm dlx taze -r",
     "dev": "nuxt dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
