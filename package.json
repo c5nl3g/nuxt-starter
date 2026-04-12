@@ -4,8 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "clean": "pnpm dlx rimraf -g '**/node_modules' '**/.nuxt'",
-    "deps:check": "pnpm dlx taze -r",
+    "deps:check": "pnx taze -r",
     "dev": "nuxt dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
@@ -17,14 +16,14 @@
   },
   "dependencies": {
     "nuxt": "^4.4.2",
-    "vue": "^3.5.31",
+    "vue": "^3.5.32",
     "vue-router": "^5.0.4"
   },
   "devDependencies": {
     "lint-staged": "^16.4.0",
-    "oxfmt": "^0.42.0",
-    "oxlint": "^1.57.0",
-    "oxlint-tsgolint": "^0.17.4",
+    "oxfmt": "^0.44.0",
+    "oxlint": "^1.59.0",
+    "oxlint-tsgolint": "^0.20.0",
     "simple-git-hooks": "^2.13.1"
   },
   "simple-git-hooks": {
