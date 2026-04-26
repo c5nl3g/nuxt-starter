@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "deps:check": "pnx taze -r",
+    "deps:check": "pnpm dlx taze -r",
     "dev": "nuxt dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
@@ -12,23 +12,21 @@
     "lint": "oxlint --type-aware --type-check",
     "lint:fix": "oxlint --fix",
     "postinstall": "nuxt prepare",
+    "prepare": "husky",
     "preview": "nuxt preview",
     "reset": "pnpm dlx rimraf -g '**/node_modules' '**/.nuxt' '**/pnpm-lock.yaml'"
   },
   "dependencies": {
     "nuxt": "^4.4.2",
-    "vue": "^3.5.32",
-    "vue-router": "^5.0.4"
+    "vue": "^3.5.33",
+    "vue-router": "^5.0.6"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "oxfmt": "^0.45.0",
-    "oxlint": "^1.60.0",
-    "oxlint-tsgolint": "^0.21.0",
-    "simple-git-hooks": "^2.13.1"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged"
+    "oxfmt": "^0.46.0",
+    "oxlint": "^1.61.0",
+    "oxlint-tsgolint": "^0.22.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
