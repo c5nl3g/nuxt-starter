@@ -17,16 +17,16 @@
     "reset": "pnpm dlx rimraf -g '**/node_modules' '**/.nuxt' '**/pnpm-lock.yaml'"
   },
   "dependencies": {
-    "nuxt": "^4.4.4",
-    "vue": "^3.5.33",
-    "vue-router": "^5.0.6"
+    "nuxt": "catalog:prod"
   },
   "devDependencies": {
-    "husky": "^9.1.7",
-    "lint-staged": "^16.4.0",
-    "oxfmt": "^0.47.0",
-    "oxlint": "^1.62.0",
-    "oxlint-tsgolint": "^0.22.1"
+    "husky": "catalog:hooks",
+    "lint-staged": "catalog:hooks",
+    "oxfmt": "catalog:fmt",
+    "oxlint": "catalog:lint",
+    "oxlint-tsgolint": "catalog:lint",
+    "typescript": "catalog:dev",
+    "vue": "catalog:frontend"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",

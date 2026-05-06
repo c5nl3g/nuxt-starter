@@ -1,3 +1,19 @@
 allowBuilds:
   "@parcel/watcher": true
   esbuild: true
+
+catalogs:
+  dev:
+    typescript: ^6.0.3
+  prod:
+    nuxt: ^4.4.4
+  frontend:
+    vue: ^3.5.34
+  fmt:
+    oxfmt: ^0.48.0
+  lint:
+    oxlint: ^1.63.0
+    oxlint-tsgolint: ^0.22.1
+  hooks:
+    husky: ^9.1.7
+    lint-staged: ^17.0.2
