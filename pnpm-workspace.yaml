@@ -6,9 +6,10 @@ catalogs:
   dev:
     typescript: ^6.0.3
   prod:
-    nuxt: ^4.4.4
+    nuxt: ^4.4.5
   frontend:
     vue: ^3.5.34
+    vue-router: ^5.0.6
   fmt:
     oxfmt: ^0.48.0
   lint:
@@ -16,4 +17,4 @@ catalogs:
     oxlint-tsgolint: ^0.22.1
   hooks:
     husky: ^9.1.7
-    lint-staged: ^17.0.2
+    lint-staged: ^17.0.4
