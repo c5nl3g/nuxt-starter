@@ -25,9 +25,7 @@
     "oxfmt": "catalog:fmt",
     "oxlint": "catalog:lint",
     "oxlint-tsgolint": "catalog:lint",
-    "typescript": "catalog:dev",
-    "vue": "catalog:frontend",
-    "vue-router": "catalog:frontend"
+    "typescript": "catalog:dev"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
