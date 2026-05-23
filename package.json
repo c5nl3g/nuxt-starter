@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "deps:check": "pnpm dlx taze -r",
+    "deps:check": "pnpm dlx taze --maturity-period=1 -r",
     "dev": "nuxt dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
