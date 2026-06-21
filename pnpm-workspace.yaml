@@ -1,20 +1,22 @@
+saveExact: true
+
 allowBuilds:
   "@parcel/watcher": true
   esbuild: true
 
 catalogs:
   dev:
-    typescript: ^6.0.3
+    typescript: 6.0.3
   prod:
-    nuxt: ^4.4.6
+    nuxt: 4.4.8
   fmt:
-    oxfmt: ^0.51.0
+    oxfmt: 0.55.0
   lint:
-    oxlint: ^1.66.0
-    oxlint-tsgolint: ^0.23.0
+    oxlint: 1.70.0
+    oxlint-tsgolint: 0.23.0
   hooks:
-    husky: ^9.1.7
-    lint-staged: ^17.0.5
+    husky: 9.1.7
+    lint-staged: 17.0.7
 
 publicHoistPattern:
   - vue
