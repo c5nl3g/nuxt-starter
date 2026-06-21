@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "deps:check": "pnpm dlx taze --maturity-period=1 -r",
+    "deps:check": "pnpm dlx taze --maturity-period=1 --include-locked -r",
     "dev": "nuxt dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
@@ -28,7 +28,7 @@
     "typescript": "catalog:dev"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "oxlint --type-aware --type-check --no-error-on-unmatched-pattern",
     "*": "oxfmt --no-error-on-unmatched-pattern"
   }
 }
